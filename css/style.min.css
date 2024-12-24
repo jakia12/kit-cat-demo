@@ -1176,7 +1176,7 @@ body._lock {
 
 .system__block {
   border-radius: 20px;
-  background: var(--green);
+  background: #ff6963;
   display: flex;
   align-items: center;
   overflow: hidden;
