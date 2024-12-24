@@ -148,7 +148,7 @@ h6 {
 
 :root {
   --app-height: 100%;
-  --white: #fff;
+  --white: #ff4337;
   --black: #050209;
   --green: #b35e41;
   /* --blue: #f2995f; */
@@ -179,7 +179,7 @@ body._lock {
   position: relative;
   overflow: hidden;
   /* background: var(--black) */
-  background: linear-gradient(to right, #ff4337, #ff6a42, #ff7f48);
+  background: linear-gradient(to right, #f1f1f1, #eee6e4, #e0d3cd);
 }
 
 .container {
@@ -207,8 +207,9 @@ body._lock {
 
 .intro {
   font-family: var(--josefin);
+  font-size: 21px;
   font-weight: 700;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: #a4a8b0;
   text-align: center;
   margin-bottom: 20px;
@@ -1197,7 +1198,7 @@ body._lock {
 }
 
 .system__image img {
-  max-width: 100%;
+  max-width: 88%;
   height: auto;
 }
 
