@@ -353,7 +353,7 @@ body._lock {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    background: url(/coin.png) center/contain no-repeat;
+    background: url(../img/logo.png) center/contain no-repeat;
     transition: all .5s ease
 }
 
@@ -512,7 +512,7 @@ body._lock {
     right: 0;
     width: 20%;
     height: 30%;
-    background: url(/clouds.png) bottom right/contain no-repeat;
+    background: url(../img/logo.png) bottom right/contain no-repeat;
     z-index: 2;
     transform: translate(100%, 100%);
     opacity: 0;
@@ -628,7 +628,7 @@ body._lock {
     right: 3%;
     width: 120px;
     height: 117px;
-    background: url(/coin.png) center/contain no-repeat;
+    background: url(../img/logo.png) center/contain no-repeat;
     z-index: -1;
     opacity: 0;
     transform: translate(0, -50px);
@@ -761,7 +761,7 @@ body._lock {
     transform: translate(0, -60%) scale(0);
     width: 100%;
     aspect-ratio: 1440/1763;
-    background: url(/blur.png) center/cover no-repeat;
+    background: url(../img/logo.png) center/cover no-repeat;
     pointer-events: none;
     opacity: 0;
     transition: all .8s ease .5s
@@ -1033,7 +1033,7 @@ body._lock {
     bottom: 20%;
     left: 0;
     transform: translate(-50%, 0);
-    background: url(/coin.png) center/contain no-repeat;
+    background: url(../img/logo.png) center/contain no-repeat;
     opacity: 0;
     transition: all .8s ease 1s
 }
@@ -1210,12 +1210,12 @@ body._lock {
     width: 95px;
     height: 95px;
     transform: translate(-100%, 0);
-    background: url(/coin.png) center/contain no-repeat
+    background: url(../img/logo.png) center/contain no-repeat
 }
 
 .system__info .system__intro {
     color: var(--black);
-    margin-bottom: 50px
+    margin-bottom: 15px
 }
 
 .system__desc {
@@ -1263,7 +1263,7 @@ body._lock {
     transform: translate(0, -60%);
     width: 253px;
     height: 476px;
-    background: url(/coin.png) center/contain no-repeat;
+    background: url(../img/logo.png) center/contain no-repeat;
     z-index: -1
 }
 
@@ -2249,7 +2249,7 @@ body._lock {
     transform: translate(100%, 100%);
     width: 140px;
     aspect-ratio: 140/230;
-    background: url(/clouds.png) center right/contain no-repeat;
+    background: url(../img/logo.png) center right/contain no-repeat;
     opacity: 0;
     transition: all .8s ease 1s
 }
@@ -2464,7 +2464,7 @@ body._lock {
     width: 154%;
     max-width: 730px;
     aspect-ratio: 730/820;
-    background: url(/clouds.png) center left/contain no-repeat;
+    background: url(../img/logo.png) center left/contain no-repeat;
     z-index: -1
 }
 
@@ -2567,7 +2567,7 @@ body._lock {
     max-width: 260px;
     width: 30%;
     aspect-ratio: 260/470;
-    background: url(/coin.png) top right/contain no-repeat;
+    background: url(../img/logo.png) top right/contain no-repeat;
     transform: scale(0)
 }
 
@@ -2580,7 +2580,7 @@ body._lock {
     max-width: 245px;
     width: 30%;
     aspect-ratio: 245/435;
-    background: url(/coin.png) top right/contain no-repeat;
+    background: url(../img/logo.png) top right/contain no-repeat;
     transform: scale(0)
 }
 
