@@ -148,7 +148,7 @@ h6 {
 
 :root {
   --app-height: 100%;
-  --white: #ff4337;
+  --white: black;
   --black: #050209;
   --green: #b35e41;
   /* --blue: #f2995f; */
@@ -535,17 +535,17 @@ body._lock {
 .main__body {
   display: flex;
   align-items: center;
-  padding: 150px 0 40px;
+  padding: 40px 0 40px;
 }
 
 .main__info {
   flex: 1 1 40%;
-  padding-right: 30px;
+  padding-left: 55px;
 }
 
 .main__title {
   margin-bottom: 50px;
-  font-size: 7.5rem;
+  font-size: 7rem;
   font-family: var(--payton);
   line-height: 1;
   transform: translate(0, 50px);
@@ -1193,7 +1193,7 @@ body._lock {
 .system__image {
   flex: 1 1 50%;
   align-self: flex-end;
-  margin-bottom: -5%;
+  margin-bottom: 2%;
   max-width: 685px;
 }
 
