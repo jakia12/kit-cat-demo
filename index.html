@@ -1,206 +1,340 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Kit-Cat</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="preload"
+      href="fonts/Inter-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/Inter-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/Inter-SemiBold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/PaytoneOne-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/JosefinSans-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/JosefinSans-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
 
-<head>
-  <title>Kit-Cat</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-  <link rel="preload" href="fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-  <link rel="preload" href="fonts/Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-  <link rel="preload" href="fonts/PaytoneOne-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-  <link rel="preload" href="fonts/JosefinSans-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-  <link rel="preload" href="fonts/JosefinSans-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
 
-  <link rel="manifest" href="/site.webmanifest" />
-  <meta name="msapplication-TileColor" content="#da532c" />
-  <meta name="theme-color" content="#ffffff" />
+    <link
+      rel="stylesheet"
+      href="https://terminal.jup.ag/main-2.2.0-Jupiter.css?_v=20240605165403"
+    />
+    <link rel="stylesheet" href="css/style.min.css?_v=20240605165403" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240605165403"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="shortcut icon" href="./img/logo-2.png" type="image/x-icon" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-P43CSFHTKS&_v=20240605165403"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
 
-  <!-- deploy -->
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  <link rel="stylesheet" href="https://terminal.jup.ag/main-2.2.0-Jupiter.css?_v=20240605165403" />
-  <link rel="stylesheet" href="css/style.min.css?_v=20240605165403" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240605165403" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-  <link rel="shortcut icon" href="./img/logo-2.png" type="image/x-icon" />
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P43CSFHTKS&_v=20240605165403"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
+      gtag("config", "G-P43CSFHTKS");
+    </script>
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
+    <script
+      src="https://terminal.jup.ag/main-v2.js?_v=20240605165403"
+      data-preload
+    ></script>
+    <script
+      src="https://widgets.claimr.io/claimr.min.js?_v=20240605165403"
+      id="claimr-script"
+      data-organization=" Kit-Cat"
+      data-campaign="walking-ben-the-dog"
+      data-autoresize="true"
+      data-container="claimr_container"
+    ></script>
+  </head>
 
-    gtag("config", "G-P43CSFHTKS");
-  </script>
+  <body>
+    <div class="wrapper" data-mob="menu, after">
+      <header class="header animate">
+        <div class="header__container container">
+          <div class="header__body">
+            <a href="#about" class="header__logo logo" data-desk="menu, after">
+              <picture>
+                <!-- <source srcset="./img/logo.png" type="image/webp" /> -->
+                <img src="./img/text.png" alt="Logo" width="40" height="40" />
+              </picture>
+              
+            </a>
+            <div class="header__menu menu" data-move="menu, 993">
+              <nav class="menu__body">
+                <div class="menu__wrapper">
+                  <ul class="menu__list">
+                    <li class="menu__item">
+                      <a
+                        href="#story"
+                        style="font-family: texts"
+                        class="menu__link"
+                        >About</a
+                      >
+                    </li>
+                    <li class="menu__item">
+                      <a
+                        href="#tokenomics"
+                        style="font-family: texts"
+                        class="menu__link"
+                        >Tokenomics</a
+                      >
+                    </li>
+                    <li class="menu__item">
+                      <a
+                        href="tglink"
+                        target="_blank"
+                        class="menu__link"
+                        style="font-family: texts"
+                        >Telegram</a
+                      >
+                    </li>
+                    <li class="menu__item">
+                      <a
+                        href="ttlink"
+                        target="_blank"
+                        class="menu__link"
+                        style="font-family: texts"
+                        >Twitter</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="menu__socials socials">
+                  <div class="socials__body">
+                    <a
+                      href="ttlink"
+                      class="socials__item"
+                      target="_blank"
+                      title="Twitter"
+                    >
+                      <i class="bi bi-twitter-x" style="color: #fff"></i>
+                    </a>
+                    <a
+                      href="tglink"
+                      target="_blank"
+                      class="socials__item"
+                      title="Reddit"
+                    >
+                      <i class="bi bi-telegram" style="color: #fff"></i>
+                    </a>
+                  </div>
+                </div>
+              </nav>
+            </div>
+            <button
+              type="button"
+              class="header__menu-icon"
+              title="menu"
+            ></button>
+          </div>
+        </div>
+      </header>
 
-  <script src="https://terminal.jup.ag/main-v2.js?_v=20240605165403" data-preload></script>
-  <script src="https://widgets.claimr.io/claimr.min.js?_v=20240605165403" id="claimr-script"
-    data-organization=" Kit-Cat" data-campaign="walking-ben-the-dog" data-autoresize="true"
-    data-container="claimr_container"></script>
-</head>
+      <style>
+        @font-face {
+          font-family: texts;
+          src: url(/head.ttf);
+        }
 
-<body>
-  <div class="wrapper" data-mob="menu, after">
-    <header class="header animate">
-      <div class="header__container container">
-        <div class="header__body">
-          <a href="#about" class="header__logo logo" data-desk="menu, after">
-            <picture>
-              <source srcset="./img/logo.png" type="image/webp" />
-              <img src="./img/logo.png" alt="Logo" width="40" height="40" />
-            </picture>
-            <span style="font-family: head"> Kit-Cat</span>
-          </a>
-          <div class="header__menu menu" data-move="menu, 993">
-            <nav class="menu__body">
-              <div class="menu__wrapper">
-                <ul class="menu__list">
-                  <li class="menu__item">
-                    <a href="#story" style="font-family: head" class="menu__link">About</a>
-                  </li>
-                  <li class="menu__item">
-                    <a href="#tokenomics" style="font-family: head" class="menu__link">Tokenomics</a>
-                  </li>
-                  <li class="menu__item">
-                    <a href="tglink" target="_blank" class="menu__link" style="font-family: head">Telegram</a>
-                  </li>
-                  <li class="menu__item">
-                    <a href="ttlink" target="_blank" class="menu__link" style="font-family: head">Twitter</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="menu__socials socials">
-                <div class="socials__body">
-                  <a href="ttlink" class="socials__item" target="_blank" title="Twitter">
-                    <i class="bi bi-twitter-x" style="color: #fff"></i>
-                  </a>
-                  <a href="tglink" target="_blank" class="socials__item" title="Reddit">
-                    <i class="bi bi-telegram" style="color: #fff"></i>
-                  </a>
+        @font-face {
+          font-family: texts;
+          src: url(/new.ttf);
+        }
+      </style>
+      <div class="page">
+        <div
+          id="about"
+          class="main animate"
+          
+        >
+          <div class="main__container container">
+            <div class="main__body">
+              <div class="main__info">
+                <h1
+                  class="main__title animate"
+                  style="
+                    font-family: texts;
+                    color: #ffffff;
+                    text-shadow: 1px 2px 2px #000;
+                  "
+                >
+                  Kit-Cat
+                </h1>
+                <p
+                  class="main__desc animate"
+                  style="font-family: texts; text-shadow: 1px 2px 2px #000"
+                >
+                  The Kit-Cat Clock strikes - we burn tokens! Each time we hit a
+                  planned milestone, we’ll burn 2% of the total supply, creating
+                  scarcity and driving growth. The goal? To skyrocket the chart
+                  and keep the community happy and engaged!
+                </p>
+                <div class="hero_buttons">
+                  <a
+                    href="buylink"
+                    class="main__btn btn_green animate"
+                    style="
+                      background-color: #f7a35a;
+                      color: #fff;
+                      font-family: texts;
+                    "
+                    >Buy Now</a
+                  >
+                  <a
+                    href="tglink"
+                    class="main__btn btn_green animate"
+                    style="
+                      background-color: #f7a35a;
+                      color: #fff;
+                      font-family: texts;
+                    "
+                    >Community</a
+                  >
                 </div>
               </div>
-            </nav>
-          </div>
-          <button type="button" class="header__menu-icon" title="menu"></button>
-        </div>
-      </div>
-    </header>
-
-    <style>
-      @font-face {
-        font-family: head;
-        src: url(/head.ttf);
-      }
-
-      @font-face {
-        font-family: texts;
-        src: url(/new.ttf);
-      }
-    </style>
-    <div class="page">
-      <div id="about" class="main animate" style="
-            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.3)), url('./img/2.png');
-          ">
-        <div class="main__container container">
-          <div class="main__body">
-            <div class="main__info">
-              <h1 class="main__title animate" style="
-                    font-family: head;
-                    color: #f7a35a;
-                    text-shadow: 1px 2px 2px #000;
-                  ">
-                Kit-Cat
-              </h1>
-              <p class="main__desc animate" style="font-family: texts; text-shadow: 1px 2px 2px #000">
-                The Kit-Cat Clock strikes - we burn tokens! Each time we hit a
-                planned milestone, we’ll burn 2% of the total supply, creating
-                scarcity and driving growth. The goal? To skyrocket the chart
-                and keep the community happy and engaged!
-              </p>
-              <div class="hero_buttons">
-                <a href="buylink" class="main__btn btn_green animate" style="
-                      background-color: #f7a35a;
-                      color: #fff;
-                      font-family: head;
-                    ">Buy Now</a>
-                <a href="tglink" class="main__btn btn_green animate" style="
-                      background-color: #f7a35a;
-                      color: #fff;
-                      font-family: head;
-                    ">Community</a>
+              <div class="main__image lazy animate">
+                <picture>
+                  <source
+                    data-srcset="./img/logo-2.png"
+                    srcset="./img/logo-2.png"
+                    type="image/webp"
+                    width="622"
+                    height="622"
+                  />
+                  <img
+                    data-src="./img/logo-2.png"
+                    src="./img/logo-2.png"
+                    alt="Image"
+                    width="622"
+                    height="622"
+                  />
+                </picture>
+                <!-- <div class="main__dialog" style="font-family: texts;">  I’m Sharpei !</div>
+                       -->
+                <svg>
+                  <use href="img/icons/icons.svg#line_main"></use>
+                </svg>
               </div>
             </div>
-            <div class="main__image lazy animate">
-              <picture>
-                <source data-srcset="./img/logo-2.png" srcset="./img/logo-2.png" type="image/webp" width="622"
-                  height="622" />
-                <img data-src="./img/logo-2.png" src="./img/logo-2.png" alt="Image" width="622" height="622" />
-              </picture>
-              <!-- <div class="main__dialog" style="font-family: head;">  I’m Sharpei !</div>
-                       -->
-              <svg>
-                <use href="img/icons/icons.svg#line_main"></use>
-              </svg>
-            </div>
           </div>
         </div>
-      </div>
 
-      <div class="story" id="story">
-        <div class="story__container container">
-          <div class="story__body">
-            <div class="story__image lazy animate">
-              <picture>
-                <source data-srcset="./img/logo-2.png" srcset="./img/logo-2.png" type="image/webp" />
-                <img data-src="./img/logo-2.png" src="./img/logo-2.png" alt="Image" width="505" height="579" />
-              </picture>
-            </div>
-            <div class="story__info">
-              <p class="story__intro intro animate" style="font-family: textss">
-                about
-              </p>
-              <style>
-                @font-face {
-                  font-family: textss;
-                  src: url(/new.ttf);
-                }
-              </style>
-              <h2 class="story__title title animate" style="font-family: head">
-                Kit-Cat
-              </h2>
-              <p class="story__accent animate" style="font-family: textss">
-                By reducing the total supply, each remaining token becomes
-                more valuable, benefiting holders. This scarcity drives
-                demand, especially as the project grows. Think of it like a
-                rare collectible—fewer available items make them more sought
-                after!
+        <div class="story" id="story">
+          <div class="story__container container">
+            <div class="story__body">
+              <div class="story__image lazy animate">
+                <picture>
+                  <source
+                    data-srcset="./img/logo-2.png"
+                    srcset="./img/logo-2.png"
+                    type="image/webp"
+                  />
+                  <img
+                    data-src="./img/logo-2.png"
+                    src="./img/logo-2.png"
+                    alt="Image"
+                    width="505"
+                    height="579"
+                  />
+                </picture>
+              </div>
+              <div class="story__info">
+                <p
+                  class="story__intro intro animate"
+                  style="font-family: textss; color: white;"
+                >
+                  about
+                </p>
+                <style>
+                  @font-face {
+                    font-family: textss;
+                    src: url(/new.ttf);
+                  }
+                </style>
+                <h2
+                  class="story__title title animate"
+                  style="font-family: texts"
+                >
+                  Kit-Cat
+                </h2>
+                <p class="story__accent animate" style="font-family: textss">
+                  By reducing the total supply, each remaining token becomes
+                  more valuable, benefiting holders. This scarcity drives
+                  demand, especially as the project grows. Think of it like a
+                  rare collectible—fewer available items make them more sought
+                  after!
 
-                <br />
-                <br />
+                  <br />
+                  <br />
 
-                Burning tokens leads to a positive impact on the price chart.
-                With reduced supply and growing demand, the value of the
-                remaining tokens tends to rise over time, benefiting holders.
-                <!-- <div class="story__text animate">
+                  Burning tokens leads to a positive impact on the price chart.
+                  With reduced supply and growing demand, the value of the
+                  remaining tokens tends to rise over time, benefiting holders.
+                  <!-- <div class="story__text animate">
                                
                                 <p>
                                     Now the famous dog is inviting its friends to the ecosystem, named after him, Benhalla. Playful and creative, together they are shaping next-gen blockchain games. Join the party and have fun!
                                 </p>
                             </div> -->
-              </p>
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="partners animate">
-        <div class="partners__container container">
-          <div class="partners__body">
-            <div class="partners__slider animate">
-              <!-- <div class="partners__wrapper swiper-wrapper">
+        <div class="partners animate">
+          <div class="partners__container container">
+            <div class="partners__body">
+              <div class="partners__slider animate">
+                <!-- <div class="partners__wrapper swiper-wrapper">
                   <div class="partners__slide swiper-slide">
                     <a href="#" class="partners__item">
                       <picture>
@@ -362,39 +496,80 @@
                 </div>
               </div> -->
               <div class="main__btns_wrapper">
-                <div class="main__btns_lbl" style="font-family: head">
+                <div class="main__btns_lbl" style="font-family: texts">
                   CHECK Kit-Cat
                 </div>
                 <div class="main__btns">
-                  <a href="buylink" style="color: #fff; font-family: head" class="main__link btn_green lazy animate"
-                    style="font-family: head" target="_blank">
+                  <a
+                    href="buylink"
+                    style="color: #fff; font-family: texts"
+                    class="main__link btn_green lazy animate"
+                    style="font-family: texts"
+                    target="_blank"
+                  >
                     <picture>
-                      <source data-srcset="/ray.png" srcset="/ray.png" type="image/webp" />
-                      <img data-src="/ray.png" src="/ray.png" alt="Image" width="24" height="24" />
+                      <source
+                        data-srcset="/ray.png"
+                        srcset="/ray.png"
+                        type="image/webp"
+                      />
+                      <img
+                        data-src="/ray.png"
+                        src="/ray.png"
+                        alt="Image"
+                        width="24"
+                        height="24"
+                      />
                     </picture>
 
                     Pancakeswap
                   </a>
 
-                  <a href="chartlink" style="color: #fff; font-family: head" class="main__link btn_green lazy animate"
-                    target="_blank">
+                  <a
+                    href="chartlink"
+                    style="color: #fff; font-family: texts"
+                    class="main__link btn_green lazy animate"
+                    target="_blank"
+                  >
                     <picture>
-                      <source data-srcset="https://cdn.worldvectorlogo.com/logos/dextools.svg" srcset="
+                      <source
+                        data-srcset="https://cdn.worldvectorlogo.com/logos/dextools.svg"
+                        srcset="
                           https://cdn.worldvectorlogo.com/logos/dextools.svg
-                        " type="image/webp" />
-                      <img data-src="https://cdn.worldvectorlogo.com/logos/dextools.svg"
-                        src="https://cdn.worldvectorlogo.com/logos/dextools.svg" alt="Image" width="24" height="24" />
+                        "
+                        type="image/webp"
+                      />
+                      <img
+                        data-src="https://cdn.worldvectorlogo.com/logos/dextools.svg"
+                        src="https://cdn.worldvectorlogo.com/logos/dextools.svg"
+                        alt="Image"
+                        width="24"
+                        height="24"
+                      />
                     </picture>
 
                     Dextools
                   </a>
 
-                  <a href="dexslink" class="main__link btn_green lazy animate" target="_blank"
-                    style="color: #fff; font-family: head">
+                  <a
+                    href="dexslink"
+                    class="main__link btn_green lazy animate"
+                    target="_blank"
+                    style="color: #fff; font-family: texts"
+                  >
                     <picture>
-                      <source data-srcset="/img/dexscreener.png" srcset="/img/dexscreener.png" type="image/webp" />
-                      <img data-src="/img/dexscreener.png" src="/img/dexscreener.png" alt="Image" width="24"
-                        height="24" />
+                      <source
+                        data-srcset="/img/dexscreener.png"
+                        srcset="/img/dexscreener.png"
+                        type="image/webp"
+                      />
+                      <img
+                        data-src="/img/dexscreener.png"
+                        src="/img/dexscreener.png"
+                        alt="Image"
+                        width="24"
+                        height="24"
+                      />
                     </picture>
 
                     Dexscreener
@@ -402,7 +577,7 @@
 
                   <!-- <a href="https://etherscan.io/address/0x46fdcddfad7c72a621e8298d231033cc00e067c6"
                                     class="main__link btn_green lazy animate" target="_blank"
-                                    style="color: #fff; font-family: head;">
+                                    style="color: #fff; font-family: texts;">
                                     <picture>
                                         <source data-srcset="/img/etherscan.webp" srcset="/img/etherscan.webp"
                                             type="image/webp">
@@ -427,13 +602,20 @@
             </div>
           </div>
         </div>
-        <div class="banner" id="pack" style="
+        <div
+          class="banner"
+          id="pack"
+          style="
            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.3)), url('./img/2.png');
-          ">
+          "
+        >
           <div class="banner__container container">
             <div class="banner__body">
               <div class="banner__info">
-                <h2 class="banner__title title animate" style="font-family: head">
+                <h2
+                  class="banner__title title animate"
+                  style="font-family: texts"
+                >
                   Hold on tight! <br />
                   It's Kit-Cat
                 </h2>
@@ -441,8 +623,18 @@
               </div>
               <div class="banner__image lazy animate">
                 <picture>
-                  <source data-srcset="./img/logo.png" srcset="./img/logo.png" type="image/webp" />
-                  <img data-src="./img/logo.png" src="./img/logo.png" alt="Image" width="385" height="430" />
+                  <source
+                    data-srcset="./img/logo.png"
+                    srcset="./img/logo.png"
+                    type="image/webp"
+                  />
+                  <img
+                    data-src="./img/logo.png"
+                    src="./img/logo.png"
+                    alt="Image"
+                    width="385"
+                    height="430"
+                  />
                 </picture>
                 <svg>
                   <use href="img/icons/icons.svg#line_banner"></use>
@@ -455,8 +647,11 @@
         <div class="system" data-trigger id="ecosystem">
           <div class="system__container container">
             <div class="system__body">
-              <p class="system__intro intro animate">Kit-Cat’s world</p>
-              <h2 class="system__title title animate">Kit-Cat</h2>
+              <p  style="font-family: texts; color: white;" class="system__intro intro animate">Kit-Cat’s world</p>
+              <!-- <center>
+                <img src="./img/2.png" alt="">
+              </center> -->
+              <h2 style="font-family: texts;" class="system__title title animate">Kit-Cat</h2>
               <!-- <ul class="system__list animate">
                             <li class="system__item ">
                                 <div class="system__icon lazy">
@@ -496,117 +691,127 @@
               <div class="system__block animate">
                 <div class="system__image lazy">
                   <picture>
-                    <source data-srcset="./img/logo-2.png" srcset="./img/logo-2.png" type="image/webp" />
-                    <img data-src="./img/logo-2.png" src="/dd.jpg" alt="Image" width="695" height="500" />
+                    <source
+                      data-srcset="./img/logo-2.png"
+                      srcset="./img/logo-2.png"
+                      type="image/webp"
+                    />
+                    <img
+                      data-src="./img/logo-2.png"
+                      src="/dd.jpg"
+                      alt="Image"
+                      width="695"
+                      height="500"
+                    />
                   </picture>
                 </div>
                 <div class="system__info" style="margin-bottom: 2rem; padding-left: 5%;">
-
-                  <p class="system__desc animate">
+                  
+                  <p style="font-family: texts;" class="system__desc animate">
                     Milestones and Burn Schedule
                   </p>
-                  <p class="system__intro animate intro">
+                  <p style="font-family: texts;" class="system__intro animate intro">
                     250K Market Cap: Burn 1% 🔥
                   </p>
-                  <p class="system__intro animate intro">
+                  <p style="font-family: texts;" class="system__intro animate intro">
                     500K Market Cap: Burn 1% 🔥
                   </p>
-                  <p class="system__intro animate intro">
+                  <p style="font-family: texts;" class="system__intro animate intro">
                     800K Market Cap: Burn 1% 🔥
                   </p>
-                  <p class="system__intro animate intro">
+                  <p style="font-family: texts;" class="system__intro animate intro">
                     1M Market Cap: Burn 2% 🔥
                   </p>
-                  <p class="system__intro animate intro">
+                  <p style="font-family: texts;" class="system__intro animate intro">
                     2M Market Cap: Burn 2% 🔥
                   </p>
-                  <p class="system__intro animate intro">
+                  <p style="font-family: texts;" class="system__intro animate intro">
                     4M Market Cap: Burn 2% 🔥
                   </p>
                   <p class="system__intro animate intro">
                     5M Market Cap: Burn 2% 🔥
                   </p>
-                  <p class="system__intro animate intro">
+                  <p style="font-family: texts;" class="system__intro animate intro">
                     6M Market Cap: Burn 2% 🔥
                   </p>
-                  <p class="system__intro animate intro">
+                  <p style="font-family: texts;" class="system__intro animate intro">
                     7M Market Cap: Burn 2% 🔥
                   </p>
-                  <p class="system__intro animate intro">
+                  <p style="font-family: texts;" class="system__intro animate intro">
                     10M Market Cap: Burn 2% 🔥
                   </p>
-                  <a style="margin-top: 30px;" href="tglink" class="system__btn btn_white">Join Us</a>
+                  <a style="margin-top: 30px; font-family: texts;" href="tglink" class="system__btn btn_white">Join Us</a>
                 </div>
               </div>
             </div>
           </div>
           <div class="system__marquee marquee animate">
             <div class="marquee__wrapper">
-              <div class="marquee__body" style="font-family: head">
+              <div class="marquee__body" style="font-family: texts">
                 Kit-Cat
-                <svg style="font-family: head">
+                <svg style="font-family: texts">
                   <use href="img/icons/icons.svg#star"></use>
                 </svg>
                 Kit-Cat
-                <svg style="font-family: head">
+                <svg style="font-family: texts">
                   <use href="img/icons/icons.svg#star"></use>
                 </svg>
                 Kit-Cat
-                <svg style="font-family: head">
+                <svg style="font-family: texts">
                   <use href="img/icons/icons.svg#star"></use>
                 </svg>
                 Kit-Cat
-                <svg style="font-family: head">
+                <svg style="font-family: texts">
                   <use href="img/icons/icons.svg#star"></use>
                 </svg>
                 Kit-Cat
-                <svg style="font-family: head">
+                <svg style="font-family: texts">
                   <use href="img/icons/icons.svg#star"></use>
                 </svg>
                 Kit-Cat
-                <svg style="font-family: head">
+                <svg style="font-family: texts">
                   <use href="img/icons/icons.svg#star"></use>
                 </svg>
                 Kit-Cat
-                <svg style="font-family: head">
+                <svg style="font-family: texts">
                   <use href="img/icons/icons.svg#star"></use>
                 </svg>
                 Kit-Cat
-                <svg style="font-family: head">
+                <svg style="font-family: texts">
                   <use href="img/icons/icons.svg#star"></use>
                 </svg>
               </div>
-              <div class="marquee__body" style="font-family: head">
+              <div class="marquee__body" style="font-family: texts">
                 Kit-Cat
-                <svg style="font-family: head">
+                <svg style="font-family: texts">
                   <use href="img/icons/icons.svg#star"></use>
                 </svg>
                 Kit-Cat
-                <svg style="font-family: head">
+                <svg style="font-family: texts">
                   <use href="img/icons/icons.svg#star"></use>
                 </svg>
                 Kit-Cat
-                <svg style="font-family: head">
+                <svg style="font-family: texts">
                   <use href="img/icons/icons.svg#star"></use>
                 </svg>
                 Kit-Cat
-                <svg style="font-family: head">
+                <svg style="font-family: texts">
                   <use href="img/icons/icons.svg#star"></use>
                 </svg>
                 Kit-Cat
-                <svg style="font-family: head">
+                <svg style="font-family: texts">
                   <use href="img/icons/icons.svg#star"></use>
                 </svg>
                 Kit-Cat
-                <svg style="font-family: head">
+                <svg style="font-family: texts">
                   <use href="img/icons/icons.svg#star"></use>
                 </svg>
                 Kit-Cat
-                <svg style="font-family: head">
+                <svg style="font-family: texts">
                   <use href="img/icons/icons.svg#star"></use>
                 </svg>
                 Kit-Cat
-                <svg style="font-family: head">
+                <svg style="font-family: texts">
                   <use href="img/icons/icons.svg#star"></use>
                 </svg>
               </div>
@@ -652,53 +857,98 @@
           <div class="tokenomikcs__container container">
             <div class="tokenomikcs__body">
               <!-- <p class="tokenomikcs__intro intro animate">Ready-made characters</p> -->
-              <h2 class="tokenomikcs__title title animate" style="font-family: head">
+              <h2
+                class="tokenomikcs__title title animate"
+                style="font-family: texts"
+              >
                 Tokenomics
               </h2>
               <div class="tokenomikcs__grid">
                 <div class="tokenomikcs__item animate">
                   <div class="tokenomikcs__info" style="font-family: textss">
-                    Name: <span style="font-family: head"> Kit-Cat</span>
+                    Name: <span style="font-family: texts"> Kit-Cat</span>
                   </div>
                   <div class="tokenomikcs__icon tokenomikcs__icon_pink lazy">
                     <picture>
-                      <source data-srcset="./img/logo.png" srcset="./img/logo.png" type="image/webp" width="80"
-                        height="80" />
-                      <img data-src="./img/logo.png" src="./img/logo.png" alt="Image" width="80" height="80" />
+                      <source
+                        data-srcset="./img/logo.png"
+                        srcset="./img/logo.png"
+                        type="image/webp"
+                        width="80"
+                        height="80"
+                      />
+                      <img
+                        data-src="./img/logo.png"
+                        src="./img/logo.png"
+                        alt="Image"
+                        width="80"
+                        height="80"
+                      />
                     </picture>
                   </div>
                 </div>
                 <div class="tokenomikcs__item animate">
                   <div class="tokenomikcs__info" style="font-family: textss">
-                    Ticker: <span style="font-family: head"> $Kit-Cat</span>
+                    Ticker: <span style="font-family: texts"> $Kit-Cat</span>
                   </div>
                   <div class="tokenomikcs__icon tokenomikcs__icon_green lazy">
                     <picture>
-                      <source data-srcset="./img/logo.png" srcset="./img/logo.png" type="image/webp" width="80"
-                        height="80" />
-                      <img data-src="./img/logo.png" src="./img/logo.png" alt="Image" width="80" height="80" />
+                      <source
+                        data-srcset="./img/logo.png"
+                        srcset="./img/logo.png"
+                        type="image/webp"
+                        width="80"
+                        height="80"
+                      />
+                      <img
+                        data-src="./img/logo.png"
+                        src="./img/logo.png"
+                        alt="Image"
+                        width="80"
+                        height="80"
+                      />
                     </picture>
                   </div>
                 </div>
                 <div class="tokenomikcs__item animate">
                   <div class="tokenomikcs__info" style="font-family: textss">
-                    Tax: <span style="font-family: head">0%</span>
+                    Tax: <span style="font-family: texts">0%</span>
                   </div>
                   <div class="tokenomikcs__icon tokenomikcs__icon_blue lazy">
                     <picture>
-                      <source data-srcset="./img/logo.png" srcset="./img/logo.png" type="image/webp" width="80"
-                        height="80" />
-                      <img data-src="./img/logo.png" src="./img/logo.png" alt="Image" width="80" height="80" />
+                      <source
+                        data-srcset="./img/logo.png"
+                        srcset="./img/logo.png"
+                        type="image/webp"
+                        width="80"
+                        height="80"
+                      />
+                      <img
+                        data-src="./img/logo.png"
+                        src="./img/logo.png"
+                        alt="Image"
+                        width="80"
+                        height="80"
+                      />
                     </picture>
                   </div>
                 </div>
                 <div class="tokenomikcs__item tokenomikcs__item_xl animate">
                   <div class="tokenomikcs__info">
-                    <span style="font-family: head">CA:</span>
+                    <span style="font-family: texts">CA:</span>
                     <form class="tokenomikcs__form">
-                      <input style="font-family: textss" type="text" class="tokenomikcs__input"
-                        value="0x000000000000000000000000000000000000000" placeholder="key" />
-                      <button type="button" class="tokenomikcs__copy" title="copy">
+                      <input
+                        style="font-family: textss"
+                        type="text"
+                        class="tokenomikcs__input"
+                        value="0x000000000000000000000000000000000000000"
+                        placeholder="key"
+                      />
+                      <button
+                        type="button"
+                        class="tokenomikcs__copy"
+                        title="copy"
+                      >
                         <svg>
                           <use href="img/icons/icons.svg#copy"></use>
                         </svg>
@@ -707,9 +957,20 @@
                   </div>
                   <div class="tokenomikcs__image lazy">
                     <picture>
-                      <source data-srcset="./img/logo.png" srcset="./img/logo.png" type="image/webp" width="200"
-                        height="200" />
-                      <img data-src="./img/logo.png" src="./img/logo.png" alt="Image" width="160" height="160" />
+                      <source
+                        data-srcset="./img/logo.png"
+                        srcset="./img/logo.png"
+                        type="image/webp"
+                        width="200"
+                        height="200"
+                      />
+                      <img
+                        data-src="./img/logo.png"
+                        src="./img/logo.png"
+                        alt="Image"
+                        width="160"
+                        height="160"
+                      />
                     </picture>
                   </div>
                 </div>
@@ -723,16 +984,28 @@
                                     </picture>
                                 </div>-->
                   <div class="tokenomikcs__info">
-                    <span style="font-family: head; color: #fff">Total Supply: <br />
+                    <span style="font-family: texts; color: black"
+                      >Total Supply: <br />
                       1,000,000,000
                     </span>
                   </div>
                   <div class="tokenomikcs__image lazy">
                     <picture>
-                      <source data-srcset="./img/logo.png" srcset="./img/logo.png" type="image/webp" width="213"
-                        height="245" />
-                      <img data-src="./img/logo.png" style="width: 150px" src="./img/logo.png" alt="Image" width="200"
-                        height="225" />
+                      <source
+                        data-srcset="./img/logo.png"
+                        srcset="./img/logo.png"
+                        type="image/webp"
+                        width="213"
+                        height="245"
+                      />
+                      <img
+                        data-src="./img/logo.png"
+                        style="width: 150px"
+                        src="./img/logo.png"
+                        alt="Image"
+                        width="200"
+                        height="225"
+                      />
                     </picture>
                   </div>
                 </div>
@@ -768,15 +1041,21 @@
 
         <div class="play">
           <div class="play__graph animate">
-            <div class="play__image lazy">
+            <div class=" lazy">
               <picture>
-                <source data-srcset="./img/logo.png" srcset="./img/logo.png" type="image/webp" />
-                <img data-src="./img/logo.png" src="./img/logo.png" alt="Image" width="475" height="513" />
+                
+                <img
+                  data-src="./img/logo.png"
+                  src="./img/logo.png"
+                  alt="Image"
+                  width="555px"
+                  height=""
+                />
               </picture>
             </div>
           </div>
           <div class="play__info">
-            <h2 class="play__title title animate" style="font-family: head">
+            <h2 class="play__title title animate" style="font-family: texts">
               Join Community
             </h2>
             <p class="play__accent animate" style="font-family: textss">
@@ -800,10 +1079,9 @@
                 <div class="footer__left">
                   <a href="/" class="footer__logo logo" data-desk="menu, after">
                     <picture>
-                      <source srcset="./img/logo.png" type="image/webp" />
-                      <img src="./img/logo.png" alt="Logo" width="40" height="40" />
+                      <img src="./img/text.png" alt="Logo" width="40" height="40" />
                     </picture>
-                    <span style="font-family: head">Kit-Cat</span>
+                    <!-- <span style="font-family: texts">Kit-Cat</span> -->
                   </a>
                   <!-- <p class="footer__text">
                                     Follow Ben. Have fun. Join the infinite Web3 gaming ecosystem.
@@ -818,7 +1096,12 @@
                                     </li>-->
 
                         <li class="menu-footer__item">
-                          <a href="#story" class="menu-footer__link" style="font-family: texts">About</a>
+                          <a
+                            href="#story"
+                            class="menu-footer__link"
+                            style="font-family: texts"
+                            >About</a
+                          >
                         </li>
 
                         <!-- <li class="menu-footer__item">
@@ -826,7 +1109,12 @@
                                     </li> -->
 
                         <li class="menu-footer__item">
-                          <a href="#tokenomics" class="menu-footer__link" style="font-family: texts">Tokenomics</a>
+                          <a
+                            href="#tokenomics"
+                            class="menu-footer__link"
+                            style="font-family: texts"
+                            >Tokenomics</a
+                          >
                         </li>
                         <!--<li class="menu-footer__item">
                                         <a href="#contacts" class="menu-footer__link">Contacts</a>
@@ -849,10 +1137,20 @@
                                     <use href="img/icons/icons.svg#instagram"></use>
                                 </svg>
                             </a>-->
-                    <a href="ttlink" class="socials__item" target="_blank" title="Twitter">
+                    <a
+                      href="ttlink"
+                      class="socials__item"
+                      target="_blank"
+                      title="Twitter"
+                    >
                       <i class="bi bi-twitter-x" style="color: #fff"></i>
                     </a>
-                    <a href="tglink" target="_blank" class="socials__item" title="Reddit">
+                    <a
+                      href="tglink"
+                      target="_blank"
+                      class="socials__item"
+                      title="Reddit"
+                    >
                       <i class="bi bi-telegram" style="color: #fff"> </i>
                     </a>
                     <!--<a href="#" class="socials__item" title="Youtube">
@@ -862,7 +1160,7 @@
                             </a>-->
                   </div>
                 </div>
-                <div class="footer__rights">
+                <div style="font-family: texts;" class="footer__rights">
                   © 2024 | Kit-Cat. All rights reserved
                 </div>
               </div>
@@ -872,8 +1170,10 @@
       </footer>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20240605165403" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20240605165403"
+      defer
+    ></script>
     <script src="js/app.min.js?_v=20240605165403" defer></script>
-</body>
-
+  </body>
 </html>
